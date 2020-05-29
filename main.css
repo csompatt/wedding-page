@@ -14,7 +14,10 @@ html{
   font-size: 16px;
 }
 
-
+#content-background{
+  background: url(assets/wedding-landing-background.png);
+  background-repeat: repeat;
+}
 /*==== COVER ====*/
 
 #cover{
@@ -92,3 +95,71 @@ html{
   }
 
 }
+
+/*==== LOCATIONS ====*/
+
+#locations{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #444349;
+  padding: 2rem 0 2rem 0;
+}
+
+h2{
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3{
+  padding: 2rem 0 2rem 0;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+}
+
+.location-logo{
+  width: 30%;
+  height: auto;
+}
+
+.location-infos{
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding: 2rem 0 2rem 0;
+  line-height: 1.5rem;
+}
+
+.locations-break-line{
+  width: 25%;
+  height: .2rem;
+  border: none;
+  background-color: hsla(100,0%,0%,.7);
+}
+
+@media (min-width: 1008px){
+  
+  .ceremony, .photos, .party{
+    float: left;
+    width: 33.33%;
+  }
+
+  .locations-title{
+    padding-bottom: 5rem;
+  }
+  .location-logo{
+    width: 25%;
+    height: auto;
+  }
+  .locations-break-line{
+    display: none;
+  }
+  .spacer{
+    clear: both;
+  }
+}
+
