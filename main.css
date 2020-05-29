@@ -194,3 +194,33 @@ li, .quote{
     flex-direction: column;
   }
 }
+
+/*==== GIFTS ====*/
+
+#gifts{
+  padding: 2rem 1.5rem 0 1.5rem;
+  text-align: center;
+  color: #444349;
+}
+
+.gifts-paragraph{
+  padding: 2rem 0;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.gifts-logo{
+  width: 40%;
+  height: auto;
+}
+
+@media (min-width: 1008px){
+  
+  .gifts-logo{
+    width:10%;
+    height: auto;
+  }
+}
+
