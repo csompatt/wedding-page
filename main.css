@@ -1,0 +1,94 @@
+/*==== Font families ====*/
+
+font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif;
+
+/*==== BASE STYLES ====*/
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+
+/*==== COVER ====*/
+
+#cover{
+  width: 100vw;
+  height: 100vh;
+  background: url(assets/wedding-landing-cover.jpg);
+  background-position: 70% center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.cover-text{
+  width: 100%;
+  text-align: center;
+  background-color: hsla(100,0%,0%,.5);
+  padding: 1rem;
+}
+
+
+.tagline, .date{
+  font-size: 1.25rem;
+  color: #444349;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: .15rem;
+}
+
+.break-line{
+  width: 60%;
+}
+.headline{
+  font-size: 3.125rem;
+  color: #d2ba87;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  padding: 1rem 0 1rem 0;
+
+}
+
+.date-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-line{
+  width: 7%;
+  margin: 0 .5rem 0 .5rem;
+}
+
+
+@media (min-width: 1008px){
+  .cover-text{
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .tagline{
+    text-transform: uppercase;
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .break-line{
+    width: 20%;
+  }
+  
+  .headline{
+    font-size: 7rem;
+    padding: 2rem 0 2rem 0;
+   }
+  
+  .date-line{
+    width: 3%;
+  }
+
+}
