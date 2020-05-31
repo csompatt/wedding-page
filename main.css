@@ -1,226 +1,334 @@
-/*==== Font families ====*/
-
-font-family: 'Great Vibes', cursive;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Muli', sans-serif;
-
-/*==== BASE STYLES ====*/
-
-*{
-  box-sizing: border-box;
+* {
+  box-sizing: border-box
 }
 
-html{
-  font-size: 16px;
+html {
+  font-size: 16px
 }
 
-#content-background{
+main {
   background: url(assets/wedding-landing-background.png);
-  background-repeat: repeat;
+  background-repeat: repeat
 }
-/*==== COVER ====*/
 
-#cover{
-  width: 100vw;
+.header-text,
+.subhead-questions,
+.ta-center {
+  text-align: center
+}
+
+.date-container,
+.header {
+  display: flex;
+  align-items: center
+}
+
+.footer-text,
+.gifts-paragraph,
+.locations {
+  width: 90%
+}
+
+.header,
+.header-text {
+  width: 100%
+}
+
+.break-line,
+.questions-break-line {
+  width: 50%
+}
+
+.contact-paragraphs,
+.content-location,
+.footer-text,
+.gifts-logo,
+.gifts-paragraph,
+.gifts-title,
+.header-text,
+.headline,
+.location-infos,
+.location-logo,
+.program-content,
+.program-title,
+.questions-paragraph,
+.questions-title,
+.quote,
+.subhead-locations {
+  padding: 1rem 0
+}
+
+.contact-title,
+.gifts,
+.locations,
+.questions,
+.subhead-questions {
+  padding: 2rem 0
+}
+
+.program {
+  padding: 1rem
+}
+
+.questions {
+  padding: 2rem 1rem
+}
+
+.contact {
+  padding: 2rem 1.5rem
+}
+
+.break-line {
+  margin-top: .5rem
+}
+
+.date-line {
+  margin: 0 .5rem
+}
+
+.footer-text,
+.gifts-paragraph,
+.locations {
+  margin: 0 auto
+}
+
+.header {
   height: 100vh;
   background: url(assets/wedding-landing-cover.jpg);
   background-position: 70% center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
+  background-size: cover
 }
 
-.cover-text{
-  width: 100%;
-  text-align: center;
-  background-color: hsla(100,0%,0%,.5);
-  padding: 1rem;
+.date-container {
+  justify-content: center
 }
 
-
-.tagline, .date{
-  font-size: 1.25rem;
-  color: #444349;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: .15rem;
+.date-line {
+  width: 7%
 }
 
-.break-line{
-  width: 60%;
-}
-.headline{
-  font-size: 3.125rem;
-  color: #d2ba87;
-  font-family: 'Great Vibes', cursive;
-  font-weight: 400;
-  padding: 1rem 0 1rem 0;
-
+.location-logo {
+  width: 35%
 }
 
-.date-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.date-line{
-  width: 7%;
-  margin: 0 .5rem 0 .5rem;
-}
-
-
-@media (min-width: 1008px){
-  .cover-text{
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .tagline{
-    text-transform: uppercase;
-    margin: 1rem 0 1rem 0;
-  }
-  
-  .break-line{
-    width: 20%;
-  }
-  
-  .headline{
-    font-size: 7rem;
-    padding: 2rem 0 2rem 0;
-   }
-  
-  .date-line{
-    width: 3%;
-  }
-
-}
-
-/*==== LOCATIONS ====*/
-
-#locations{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #444349;
-  padding: 2rem 0 2rem 0;
-}
-
-h2{
-  font-family: 'Great Vibes', cursive;
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-}
-
-h3{
-  padding: 2rem 0 2rem 0;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  
-}
-
-.location-logo{
-  width: 30%;
-  height: auto;
-}
-
-.location-infos{
-  font-family: 'Muli', sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  padding: 2rem 0 2rem 0;
-  line-height: 1.5rem;
-}
-
-.locations-break-line{
+.locations-break-line {
   width: 25%;
+  height: .2rem
+}
+
+.gifts-logo {
+  width: 30%
+}
+
+.questions-break-line {
   height: .2rem;
   border: none;
-  background-color: hsla(100,0%,0%,.7);
+  background-color: #d2ba87
 }
 
-@media (min-width: 1008px){
-  
-  .ceremony, .photos, .party{
-    float: left;
-    width: 33.33%;
+.footer {
+  background-color: #606060
+}
+
+.footer-text {
+  color: #fff
+}
+
+.header-text,
+.program,
+.questions {
+  background-color: hsla(100, 0%, 0%, .6)
+}
+
+.locations-break-line {
+  border: none;
+  background-color: hsla(100, 0%, 0%, .7)
+}
+
+.headline,
+.title-style {
+  font-family: 'Great Vibes', cursive
+}
+
+.contact-paragraphs,
+.date,
+.gifts-paragraph,
+.subhead,
+.tagline {
+  font-family: 'Libre Baskerville', serif
+}
+
+.answer,
+.footer-text,
+.location-infos,
+.program-content,
+.questions-paragraph {
+  font-family: Muli, sans-serif
+}
+
+.answer,
+.contact-paragraphs,
+.gifts-paragraph,
+.location-infos,
+.program-content,
+.questions-paragraph {
+  font-size: 1.125rem
+}
+
+.headline {
+  font-size: 3.125rem
+}
+
+.title-style {
+  font-size: 3rem
+}
+
+.subhead {
+  font-size: 1.5rem
+}
+
+.footer-text {
+  font-size: .875rem
+}
+
+.contact,
+.date,
+.gifts,
+.locations,
+.tagline {
+  color: #444349
+}
+
+.headline,
+.program,
+.questions {
+  color: #d2ba87
+}
+
+.answer,
+.subhead {
+  font-weight: 700
+}
+
+.contact-paragraphs,
+.date,
+.footer-text,
+.gifts-paragraph,
+.headline,
+.location-infos,
+.program-content,
+.questions-paragraph,
+.subhead-questions,
+.tagline,
+.title-style {
+  font-weight: 400
+}
+
+.contact,
+.gifts-paragraph,
+.location-infos,
+.program-content,
+.questions-paragraph,
+.theme {
+  line-height: 1.5rem
+}
+
+.program-content {
+  line-height: 1.8rem
+}
+
+.date,
+.tagline {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, .9);
+  letter-spacing: .15rem
+}
+
+.quote {
+  font-style: italic
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none
+}
+
+a:hover {
+  color: #eda087
+}
+
+@media (min-width:1008px) {
+  .footer-text,
+  .headline {
+    padding: 2rem 0
   }
-
-  .locations-title{
-    padding-bottom: 5rem;
+  .break-line,
+  .location-logo {
+    width: 20%
   }
-  .location-logo{
-    width: 25%;
-    height: auto;
+  .flex-container,
+  .program,
+  .questions {
+    display: flex
   }
-  .locations-break-line{
-    display: none;
+  .program,
+  .questions {
+    flex-direction: column
   }
-  .spacer{
-    clear: both;
+  .content-location,
+  .theme {
+    width: 33.33%
   }
-}
-
-/*==== PROGRAM ====*/
-
-#program{
-  background-color: hsla(100,0%,0%,.6);
-  padding: 2rem 1rem 2rem 1rem;
-  color: #d2ba87;
-}
-
-.quote, li{
-  font-family: 'Muli', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
-.quote{
-    font-style: italic;
-  padding: 2rem 0;
-}
-
-li, .quote{
-  line-height: 1.7rem;
-}
-
-@media (min-width: 1008px){
-  
-  #program{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .header-text {
+    width: 50%;
+    margin: 0 auto
   }
-}
-
-/*==== GIFTS ====*/
-
-#gifts{
-  padding: 2rem 1.5rem 0 1.5rem;
-  text-align: center;
-  color: #444349;
-}
-
-.gifts-paragraph{
-  padding: 2rem 0;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-}
-
-.gifts-logo{
-  width: 40%;
-  height: auto;
-}
-
-@media (min-width: 1008px){
-  
-  .gifts-logo{
-    width:10%;
-    height: auto;
+  .tagline {
+    text-transform: uppercase;
+    margin: 1rem 0
+  }
+  .headline {
+    font-size: 7rem
+  }
+  .date-line {
+    width: 3%
+  }
+  .content-location {
+    float: left
+  }
+  .locations-title {
+    padding-bottom: 5rem
+  }
+  .locations-break-line {
+    display: none
+  }
+  .spacer {
+    clear: both
+  }
+  .program {
+    align-items: center
+  }
+  .program-content {
+    width: 30%
+  }
+  .gifts-logo {
+    width: 6%
+  }
+  .flex-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between
+  }
+  .theme {
+    padding: 3rem
+  }
+  .subhead-questions {
+    text-align: left
+  }
+  .questions-break-line {
+    display: none
+  }
+  .spacer {
+    clear: both
   }
 }
-
