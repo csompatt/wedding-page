@@ -1,4 +1,4 @@
 # wedding-page
-A weeding landing page as my first website without resonsiveness CSS.
+This landing page was my first website.
 
 https://csompatt.github.io/wedding-page/
